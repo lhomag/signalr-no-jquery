@@ -31,7 +31,7 @@
     }
   ],
   "main": "build/signalR.js",
-  "name": "signalr-no-jquery",
+  "name": "@lhomag/signalr-no-jquery",
   "readme": "README.md",
   "repository": {
     "type": "git",
