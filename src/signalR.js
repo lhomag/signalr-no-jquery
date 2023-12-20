@@ -270,9 +270,6 @@ const jQueryShim = require('./jQueryShim');
         /// <param name="requestedTransport" type="Object">The designated transports that the user has specified.</param>
         /// <param name="connection" type="signalR">The connection that will be using the requested transports.  Used for logging purposes.</param>
         /// <returns type="Object" />
-
-        console.error("jo");
-
         if ($.isArray(requestedTransport)) {
             // Go through transport array and remove an "invalid" tranports
             for (var i = requestedTransport.length - 1; i >= 0; i--) {
