@@ -160,7 +160,6 @@ const jQueryShim = require('./jQueryShim');
         ///     [Optional] A flag indicating whether connection logging is enabled to the browser
         ///     console/log. Defaults to false.
         /// </param>
-
         return new signalR.fn.init(url, qs, logging);
     };
 
@@ -272,6 +271,8 @@ const jQueryShim = require('./jQueryShim');
         /// <param name="connection" type="signalR">The connection that will be using the requested transports.  Used for logging purposes.</param>
         /// <returns type="Object" />
 
+        console.error("jo");
+
         if ($.isArray(requestedTransport)) {
             // Go through transport array and remove an "invalid" tranports
             for (var i = requestedTransport.length - 1; i >= 0; i--) {
@@ -346,7 +347,7 @@ const jQueryShim = require('./jQueryShim');
     }
 
     signalR.fn = signalR.prototype = {
-        init: function (url, qs, logging) {
+        init: function (url, qs, logging) {           
             var $connection = $(this);
 
             this.url = url;
