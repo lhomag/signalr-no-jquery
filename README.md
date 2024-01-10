@@ -9,7 +9,7 @@ jQueryShim file contains only bare-minimum of jQuery to make signalR client run.
 
 This package is not for use with ASP.NET Core version of SignalR.
 
-This version currently matches version 2.4.1 of [SignalR/SignalR](https://github.com/SignalR/SignalR) and works together with a hosted Azure SignalR Service.
+This version currently matches version 2.4.3 of [SignalR/SignalR](https://github.com/SignalR/SignalR) and works together with a hosted Azure SignalR Service.
 
 ### Usage
 
@@ -54,7 +54,7 @@ npm install --save @types/signalr-no-jquery
 and add at the beginning of TypeScript file:
 
 ```
-import { connection } from 'signalr-no-jquery';
+import { connection } from '@lhomag/signalr-no-jquery';
 ```
 
 Then you can use the connection as you would have before without $.
@@ -77,7 +77,7 @@ Then you can use the connection as you would have before without $.
 Note: This is an object holding global settings and it's not the same as connection handle returned by hubConnection
 
 ```
-import { connection } from 'signalr-no-jquery';
+import { connection } from '@lhomag/signalr-no-jquery';
 ```
 
 ### Problems
